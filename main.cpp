@@ -22,17 +22,7 @@ void startscreen(SDL_Renderer* renderer)
     SDL_RenderCopy(renderer, imgTex, NULL, NULL);
     SDL_RenderPresent(renderer);
 }
-/*void overscreen(SDL_Renderer* renderer)
-{
-    IMG_Init(IMG_INIT_JPG);
-    SDL_RenderClear(renderer);
-    SDL_Surface* imgS = IMG_Load("game over.jpg");
-    if(imgS == NULL) cout << SDL_GetError() << endl;
-    SDL_Texture* imgTex = SDL_CreateTextureFromSurface(renderer, imgS);
-    if(imgTex == NULL) cout << SDL_GetError() << endl;
-    SDL_RenderCopy(renderer, imgTex, NULL, NULL);
-    SDL_RenderPresent(renderer);
-}*/
+
 
 void renderPlayer(SDL_Renderer* renderer, SDL_Rect player, int x, int y, int scale, vector<int> tailX, vector<int> tailY, int tailLength) {
     
